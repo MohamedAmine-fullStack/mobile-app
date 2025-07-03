@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="cardview_light_background">#FAFAFA</color>
+    <color name="primary_dark">#3700B3</color>
+    <color name="primary_light">#BB86FC</color>
+    <color name="gray">#757575</color>
+    <color name="light_gray">#BDBDBD</color>
+    <color name="primary_color">#6200EE</color>
+
+
+    <!-- Arrière-plans -->
+    <color name="light_gray_background">#FAFAFA</color>
+
+    <!-- Textes -->
+    <color name="primary_text">#DE000000</color>
+    <color name="secondary_text">#8A000000</color>
+    <color name="dark_text">#333333</color>
+
+    <!-- Cartes -->
+    <color name="card_stroke">#11000000</color>
+
+    <!-- Chips -->
+    <color name="chip_background_color">#FF6200EE</color>
+
+    <!-- Boutons -->
+    <color name="button_plus">#4CAF50</color>
+    <color name="button_minus">#F44336</color>
+
+
+</resources>

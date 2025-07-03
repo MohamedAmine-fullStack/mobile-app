@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Paramètres des taxes"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <RadioGroup
+            android:id="@+id/rg_tax_mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rb_tps_only"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TPS seulement (5%)"/>
+
+            <RadioButton
+                android:id="@+id/rb_tvq_only"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TVQ seulement (9.975%)"/>
+
+            <RadioButton
+                android:id="@+id/rb_both_taxes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TPS + TVQ (14.975%)"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Catégorie par défaut"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <RadioGroup
+            android:id="@+id/rg_default_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rb_elec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Électronique"/>
+
+            <RadioButton
+                android:id="@+id/rb_food"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alimentation"/>
+
+            <RadioButton
+                android:id="@+id/rb_clothes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vêtements"/>
+
+            <RadioButton
+                android:id="@+id/rb_furniture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Meubles"/>
+        </RadioGroup>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Nom -->
+        <EditText
+            android:id="@+id/et_nom_produit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nom du produit"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Description -->
+        <EditText
+            android:id="@+id/et_description_produit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Prix -->
+        <EditText
+            android:id="@+id/et_prix_produit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Prix"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Catégorie -->
+        <Spinner
+            android:id="@+id/spinner_categorie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Date d'ajout -->
+        <EditText
+            android:id="@+id/et_date_ajout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date d'ajout"
+            android:focusable="false"
+            android:clickable="true"
+            android:inputType="none"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- État du produit -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="État du produit"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+        <RadioGroup
+            android:id="@+id/rg_etat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <RadioButton
+                android:id="@+id/rb_neuf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Neuf" />
+
+            <RadioButton
+                android:id="@+id/rb_usage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Usagé" />
+        </RadioGroup>
+
+        <!-- Taxabilité -->
+        <RadioGroup
+            android:id="@+id/rg_taxable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <RadioButton
+                android:id="@+id/rb_taxable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Taxable" />
+
+            <RadioButton
+                android:id="@+id/rb_non_taxable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Non taxable" />
+        </RadioGroup>
+
+        <!-- Taux de taxe -->
+        <Spinner
+            android:id="@+id/spinner_taxe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Boutons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <Button
+                android:id="@+id/btn_annuler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Annuler" />
+
+            <Button
+                android:id="@+id/btn_sauvegarder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sauvegarder"
+                android:layout_marginStart="16dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

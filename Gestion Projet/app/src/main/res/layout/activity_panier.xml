@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PanierActivity">
+
+    <ListView
+        android:id="@+id/panier_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_totals"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_totals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_vider_panier"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tv_total_sans_taxes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/total_sans_taxes"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_montant_taxes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/montant_taxes"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_total_avec_taxes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/total_avec_taxes"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_vider_panier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/vider_panier"/>
+</RelativeLayout>
+

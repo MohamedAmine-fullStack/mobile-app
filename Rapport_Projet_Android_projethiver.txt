@@ -1,0 +1,49 @@
+
+RAPPORT DE PROJET ANDROID – Gestion Projet
+=======================================
+
+1. Informations Générales:
+--------------------------
+- Nom du projet : Gestion Projet
+- Type de projet : Application Android (Android Studio)
+- Structure : Projet Gradle avec wrapper intégré
+
+2. Structure Principale du Projet:
+----------------------------------
+Le projet contient les éléments standards suivants :
+- build.gradle : fichier de configuration global pour la compilation du projet.
+- settings.gradle : déclaration des modules utilisés.
+- gradlew & gradlew.bat : scripts pour exécuter Gradle sans installation préalable (Linux/Windows).
+- gradle.properties : configuration personnalisée du projet.
+- .gradle/ : répertoire temporaire utilisé par Gradle pour la compilation.
+- .gitignore : fichier permettant d’exclure certains fichiers du suivi Git.
+- local.properties : contient le chemin du SDK Android (spécifique à chaque machine).
+
+3. Instructions pour Ouvrir le Projet dans Android Studio
+----------------------------------------------------------
+1. Extraire le fichier ZIP si ce n’est pas encore fait.
+2. Lancer Android Studio.
+3. Cliquer sur Open an existing project.
+4. Naviguer jusqu’au dossier Gestion Projet extrait et le sélectionner.
+5. Android Studio procédera à une synchronisation Gradle automatique.
+6. Une fois le chargement terminé, vérifier l’arborescence du projet, les fichiers sources et la présence du dossier app/.
+
+4. Recommandations:
+------------------
+- S'assurer que le SDK Android est installé et configuré.
+- Lancer une synchronisation Gradle si elle ne démarre pas automatiquement.
+- Vérifier la présence des fichiers sources dans app/src/main/java et des layouts XML dans app/src/main/res/layout.
+- Si le projet est ancien, Android Studio peut proposer une mise à jour des outils Gradle ou des plugins.
+
+5. Conclusion:
+-------------
+Le projet Gestion Projet est prêt à être utilisé dans Android Studio. Il respecte les conventions d’un projet Android moderne, basé sur Gradle, avec tous les fichiers essentiels présents pour assurer une bonne compilation et un bon fonctionnement.
+
+
+Remarque: dans le fichier Layout de projet j ai fait quelques modification mais en cours de l execution s affiche pas les modification qui sont  mise a jour 
+Mohamed amine Rejeb
+Oussama 
+Fatima
+Nouara
+
+
